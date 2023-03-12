@@ -28,13 +28,13 @@ function atualizarContagem() {
     var secAtual = new Date().getSeconds()
     var secFaltam = 60 - secAtual
     // Contagem Regressiva
-   contagemDias.innerHTML = `<p>Faltam <strong>${parseInt(diasFaltam)}</strong> Dias</p>`// Dias
+   contagemDias.innerHTML = `<p><strong>${parseInt(diasFaltam)}</strong> Dias</p>`// Dias
 
-   contagemHoras.innerHTML = `<p>Faltam <strong>${parseInt(horasFaltam)}</strong> Horas</p>`// Horas
+   contagemHoras.innerHTML = `<p><strong>${parseInt(horasFaltam)}</strong> Horas</p>`// Horas
 
-   contagemMinutos.innerHTML = `<p>Faltam <strong>${minFaltam} </strong> Minutos</p>`// Minutos
+   contagemMinutos.innerHTML = `<p><strong>${minFaltam} </strong> Minutos</p>`// Minutos
 
-   contagemSegundos.innerHTML = `<p>Faltam <strong>${secFaltam}</strong> Segundos</p>`// Segundos
+   contagemSegundos.innerHTML = `<p><strong>${secFaltam}</strong> Segundos</p>`// Segundos
 
 }
 setInterval(atualizarContagem, 0)
